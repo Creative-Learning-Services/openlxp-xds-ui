@@ -1,14 +1,15 @@
 'use strict';
 
+import '@testing-library/jest-dom'
 import { MemoryRouterProvider } from 'next-router-mock/MemoryRouterProvider';
 import { QueryClientWrapper } from '@/__mocks__/queryClientMock';
 import { act, fireEvent, render, screen } from '@testing-library/react';
+import { useAuth } from '@/contexts/AuthContext';
 import {
   useAuthenticatedUser,
   useMockConfig,
   useUnauthenticatedUser,
 } from '@/__mocks__/predefinedMocks';
-import { useAuth } from '@/contexts/AuthContext';
 import Login from '@/pages/login';
 import MockAxios from 'jest-mock-axios';
 import React from 'react';

@@ -1,11 +1,13 @@
 'use strict';
 
-// tests for hooks/useSubscribedLists.js
-import mockAxios from 'jest-mock-axios';
-import { renderHook } from '@testing-library/react-hooks';
+'use strict';
 
-import { useSubscribedLists } from '@/hooks/useSubscribedLists';
+// tests for hooks/useSubscribedLists.js
+import { renderHook } from '@testing-library/react-hooks';
+import mockAxios from 'jest-mock-axios';
+
 import { QueryClientWrapper } from '@/__mocks__/queryClientMock';
+import { useSubscribedLists } from '@/hooks/useSubscribedLists';
 
 jest.unmock('@/hooks/useSubscribedLists');
 

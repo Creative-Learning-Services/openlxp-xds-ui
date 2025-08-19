@@ -1,16 +1,17 @@
 'use strict';
 
-import { render, fireEvent } from '@testing-library/react';
-import { act } from 'react-dom/test-utils';
-import CreateSavedSearchModal from '@/components/modals/CreateSavedSearch';
-import { useCreateSaveSearch } from '@/hooks/useCreateSaveSearch';
+import '@testing-library/jest-dom'
 import { QueryClientWrapper } from '@/__mocks__/queryClientMock';
+import { act } from 'react-dom/test-utils';
 import {
   createSaveSearchMockFn,
   useAuthenticatedUser,
   useMockCreateSaveSearch,
   useUnauthenticatedUser,
 } from '@/__mocks__/predefinedMocks';
+import { fireEvent, render } from '@testing-library/react';
+import { useCreateSaveSearch } from '@/hooks/useCreateSaveSearch';
+import CreateSavedSearchModal from '@/components/modals/CreateSavedSearch';
 
 const renderer = () => {
   return render(

@@ -1,7 +1,8 @@
 'use strict';
 
-import { render, screen, act, fireEvent } from '@testing-library/react';
+import { act, fireEvent, render, screen } from '@testing-library/react';
 
+import '@testing-library/jest-dom'
 import ActionButton from '../../../components/buttons/ActionButton';
 
 describe('Action Button', () => {

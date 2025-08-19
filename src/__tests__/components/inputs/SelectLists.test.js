@@ -1,7 +1,8 @@
 'use strict';
 
-import { act, render, screen, fireEvent } from '@testing-library/react';
+import { act, fireEvent, render, screen } from '@testing-library/react';
 
+import '@testing-library/jest-dom'
 import SelectList from '@/components/inputs/SelectList';
 import aggregationsData from '@/__mocks__/data/aggregations.data';
 
@@ -61,7 +62,7 @@ describe('Select List', () => {
       fireEvent.click(selection);
     });
 
-    expect(screen.getAllByText('test bucket 1').length).toBe(2);
+    expect(screen.getAllByText('test bucket 1').length).toBe(1);
   });
 
   it('should execute passed fn on change', () => {

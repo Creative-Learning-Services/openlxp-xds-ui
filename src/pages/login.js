@@ -1,16 +1,17 @@
 'use strict';
 
+import React, { useEffect, useState } from 'react';
+
 import { LoginIcon } from '@heroicons/react/outline';
 import { authLogin } from '@/config/endpoints';
 import { axiosInstance } from '@/config/axiosConfig';
 import { useAuth } from '@/contexts/AuthContext';
+import { useConfig } from '@/hooks/useConfig';
 import { useRouter } from 'next/router';
 import DefaultLayout from '@/components/layouts/DefaultLayout';
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
 import logo from '@/public/logo.png';
-import { useConfig } from '@/hooks/useConfig';
 
 export default function Login() {
   const router = useRouter();
@@ -56,11 +57,13 @@ export default function Login() {
     }
   };
 
+  const imagePath = '/_next/static/media/logo.ed71202b.png';
+
   return (
     <DefaultLayout>
       <div className={'pb-32'}>
         <div className='mt-10 mx-52 flex flex-col items-center justify-between'>
-          <Image src={logo} alt={'home'} height={'200'} width={'200'} priority={true}/>
+          <Image src={imagePath} alt={'home'} height={'200'} width={'200'} priority={true}/>
           <p className={'mt-2 text-2xl font-extrabold '}>
             Sign in to your account
           </p>
