@@ -1,6 +1,6 @@
 # OpenLXP: Experience Discovery Service UI (XDS UI)
 
-This is the UI for the OpenLXP: Experience Discovery Service. It allows you to create and manage your own experience collection, subscribe to other people's experience collections, and search for experiences indexed in the service.
+This is the UI for the OpenLXP: Experience Discovery Service ([XDS](https://github.com/adlnet/ecc-openlxp-xds)). It allows you to create and manage your own experience collection, subscribe to other people's experience collections, and search for experiences indexed in the service.
 
 **Note: For this service to work properly you will need the XDS Backend component to accompany it.**
 
