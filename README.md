@@ -157,4 +157,4 @@ All of the components in the project are unit tested and are covered by the [Jes
 [ECC-Openlxp Wiki can be found here](https://github.com/adlnet/ecc-openlxp-xds-ui/wiki)
 
 ## License
- This project uses the [Apache](http://www.apache.org/licenses/LICENSE-2.0) license.
+This project uses the [Apache](http://www.apache.org/licenses/LICENSE-2.0) license.
