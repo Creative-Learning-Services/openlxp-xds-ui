@@ -1,6 +1,6 @@
 # OpenLXP: Experience Discovery Service UI (XDS UI)
 
-This is the UI for the OpenLXP: Experience Discovery Service. It allows you to create and manage your own experience collection, subscribe to other people's experience collections, and search for experiences indexed in the service.
+This is the UI for the OpenLXP: Experience Discovery Service ([XDS](https://github.com/adlnet/ecc-openlxp-xds)). It allows you to create and manage your own experience collection, subscribe to other people's experience collections, and search for experiences indexed in the service.
 
 **Note: For this service to work properly you will need the XDS Backend component to accompany it.**
 
@@ -26,7 +26,7 @@ Or copy it into one of these folders to install it system-wide:
 ## 1. Clone the repository
 Clone the Github repository
 ```terminal
-git clone https://github.com/OpenLXP/openlxp-xds-ui.git
+git clone https://github.com/adlnet/ecc-openlxp-xds-ui.git
 ```  
 
 ## 2. Set up your environment variables
@@ -152,3 +152,9 @@ All of the components in the project are unit tested and are covered by the [Jes
 [Prettier Documentation can be found here](https://prettier.io/docs/en/install.html)
 
 [Jest Documentation can be found here](https://jestjs.io/docs/en/getting-started)
+
+## Additional Documentation
+[ECC-Openlxp Wiki can be found here](https://github.com/adlnet/ecc-openlxp-xds-ui/wiki)
+
+## License
+This project uses the [Apache](http://www.apache.org/licenses/LICENSE-2.0) license.
